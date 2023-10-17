@@ -1,4 +1,5 @@
 import styles from "./home.module.css";
+import { NavLink } from "react-router-dom";
 import phones from "../../assets/phones.webp";
 
 const Home = () => {
@@ -15,15 +16,18 @@ const Home = () => {
             consectetur odio tempore commodi totam earum id, alias magni
             provident? Esse eaque incidunt id qui quaerat voluptates.
           </p>
-          <a href="#">boton</a>
+          <NavLink className='w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-semibold border-slate-900 hover:bg-emerald-500 transition'>
+            boton
+          </NavLink>
         </article>
         <div className="flex w-2/5 justify-center items-center">
           <img
-            className="w-96"
+            className="w-96 z-10"
             src={phones}
             alt="#"
           />
         </div>
+        <span className={`${styles.deco}`}></span>
       </section>
     </main>
   );

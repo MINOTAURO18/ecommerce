@@ -1,3 +1,15 @@
 .sectionOne{
-  background-color: rgb(245, 240, 240);
+  background-color: rgb(246, 253, 255);
+}
+
+.deco{
+    position: absolute;
+    top: 62%;
+    left: 62%;
+    width: 24rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(0, 199, 133), rgb(0, 78, 129));
+    filter: blur(80px);
+   
 }
