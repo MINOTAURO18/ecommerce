@@ -7,9 +7,9 @@ const NavBar = () => {
         <header className={`${styles.header} w-full absolute text-zinc-900`}>
             <span className="flex items-center font-semibold text-xl">JAMYCOMMERS</span>
             <nav className="flex justify-center items-center gap-6 font-semibold">
-                <Link>Home</Link>
-                <Link>Products</Link>
-                <Link>About</Link>
+                <Link to='/'>Home</Link>
+                <Link to='/products'>Products</Link>
+                <Link to='/about'>About</Link>
             </nav>
             <div className={`${styles.redes} flex justify-end gap-2`}>
                 <span className="flex gap-2">
