@@ -4,7 +4,7 @@ import styles from './navBar.module.css'
 
 const NavBar = () => {
     return (
-        <header className={`${styles.header} w-full absolute text-white`}>
+        <header className={`${styles.header} w-full absolute text-zinc-900`}>
             <span className="flex items-center font-semibold text-xl">JAMYCOMMERS</span>
             <nav className="flex justify-center items-center gap-6 font-semibold">
                 <Link>Home</Link>
