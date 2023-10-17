@@ -1,13 +1,15 @@
 import NavBar from './components/NavBar/NavBar'
+import Home from './views/home/Home'
 import './index.css'
 
 
 function App() {
 
   return (
-    <main>
+    <div>
        <NavBar/>
-    </main>
+       <Home/>
+    </div>
   )
 }
 
