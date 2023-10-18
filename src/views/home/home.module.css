@@ -8,7 +8,7 @@
 }
 
 .sectionThree{
-  background-color: rgb(246, 253, 255);
+  background: linear-gradient(45deg, rgba(0, 199, 133, 0.192),rgb(255, 255, 255)  );
   min-height: 80vh;
 }
 

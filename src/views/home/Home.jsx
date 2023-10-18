@@ -60,11 +60,11 @@ const Home = () => {
             consectetur odio tempore commodi totam earum id, alias magni
             provident? Esse eaque incidunt id qui quaerat voluptates.
           </p>
-          <NavLink className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-semibold border-slate-900 hover:bg-emerald-500 transition">
+          <NavLink className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-bold hover:bg-emerald-500 transition">
             boton
           </NavLink>
         </article>
-        <div className="flex w-2/5 justify-center items-center">
+        <div className="flex h-8 w-2/5 justify-center items-center animate-bounce animate-infinite animate-duration-[3000ms]  z-30">
           <img className="w-96 z-10" src={phones} alt="#" />
         </div>
         <span className={`${styles.deco}`}></span>
@@ -76,42 +76,40 @@ const Home = () => {
         <h2 className="text-2xl text-emerald-400 font-semibold">
           Trending Categories
         </h2>
-        <article className="w-full h-auto flex justify-between items-center gap-3">
-          <div className="w-36">
+        <article className="w-full h-auto flex justify-between items-center gap-3 flex-wrap">
+          <div className="w-36 hover:animate-jump animate-once">
             <img src={iphone} alt="" />
           </div>
-          <div className="w-36">
+          <div className="w-36 hover:animate-jump animate-once">
             <img src={diademas} alt="" />
           </div>
-          <div className="w-36">
+          <div className="w-36 hover:animate-jump animate-once">
             <img src={laptop} alt="" />
           </div>
-          <div className="w-36">
+          <div className="w-36 hover:animate-jump animate-once">
             <img src={airpots} alt="" />
           </div>
-          <div className="w-36">
+          <div className="w-36 hover:animate-jump animate-once">
             <img src={smartwach} alt="" />
           </div>
-          <div className="w-36">
+          <div className="w-36 hover:animate-jump animate-once">
             <img src={tablet} alt="" />
           </div>
         </article>
       </section>
 
-      <section className={`${styles.sectionThree} px-8% py-7 flex justify-center items-center gap-10`}>
-        <article>
-          <NavLink className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-semibold border-slate-900 hover:bg-emerald-500 transition">
-            boton
-          </NavLink>
-          <span>Up to 30% Discount Check it Out</span>
-          <span>
-            <span>{timeLeft.days} Días</span>
-            <span>{timeLeft.hours} Horas</span>
-            <span>{timeLeft.minutes} Minutos</span>
-            <span>{timeLeft.seconds} Segundos</span>
+      <section className={`${styles.sectionThree} px-8% py-7 flex flex-wrap justify-center items-center gap-10`}>
+        <article className="flex flex-col gap-7 justify-center items-center">
+          <span className="font-semibold text-emerald-400">Hurry Up !</span>
+          <span className="text-5xl font-semibold text-center max-w-lg">Up to 30% Discount Check it Out</span>
+          <span className="flex gap-5 font-semibold">
+            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center ">{timeLeft.days} <span>Días</span></div>
+            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center">{timeLeft.hours} <span>Horas</span></div>
+            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center" >{timeLeft.minutes} <span>Min</span></div>
+            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center">{timeLeft.seconds} <span>Seg</span></div>
           </span>
 
-          <NavLink className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-semibold border-slate-900 hover:bg-emerald-500 transition">
+          <NavLink className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-semibold  hover:bg-emerald-500 transition">
             Shop Now
           </NavLink>
         </article>
