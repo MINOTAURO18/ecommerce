@@ -25,9 +25,9 @@ function App() {
           path="/products"
           element={
             <TransitionGroup>
-              <CSSTransition key="prosucts" classNames="fade" timeout={200}>
+              <CSSTransition key="products" classNames="fade" timeout={200}>
                 <Products/>
-              </CSSTransition>
+              </CSSTransition>  
             </TransitionGroup>
           }
         />

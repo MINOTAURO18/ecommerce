@@ -29,6 +29,10 @@ const Home = () => {
         </div>
         <span className={`${styles.deco}`}></span>
       </section>
+
+      <section className="flex flex-wrap gap-4 items-center w-full px-8% min-h-screen">
+        
+      </section>
     </main>
   );
 };
