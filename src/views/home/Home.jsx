@@ -6,6 +6,9 @@ import diademas from "../../assets/diademas.webp";
 import airpots from "../../assets/airpots.webp";
 import tablet from "../../assets/tablet.webp";
 import laptop from "../../assets/laptop.webp";
+import box from "../../assets/box.svg";
+import dollar from "../../assets/dollar.svg";
+import plus from "../../assets/plus.svg";
 import smartwach from "../../assets/Smartwach.webp";
 import { useState, useEffect } from "react";
 
@@ -50,7 +53,7 @@ const Home = () => {
           <span className="text-emerald-400 font-semibold">
             technology out of this world !
           </span>
-          <h1 className="text-5xl font-bold max-w-2xl ">
+          <h1 className="text-5xl font-bold max-w-2xl  ">
             Empowering Your{" "}
             <span className="text-emerald-400">Tomorrow with Todays</span>{" "}
             Cutting-Edge Technology
@@ -98,15 +101,27 @@ const Home = () => {
         </article>
       </section>
 
-      <section className={`${styles.sectionThree} px-8% py-7 flex flex-wrap justify-center items-center gap-10`}>
+      <section
+        className={`${styles.sectionThree} px-8% py-7 flex flex-wrap justify-center items-center gap-14`}
+      >
         <article className="flex flex-col gap-7 justify-center items-center">
           <span className="font-semibold text-emerald-400">Hurry Up !</span>
-          <span className="text-5xl font-semibold text-center max-w-lg">Up to 30% Discount Check it Out</span>
+          <span className="text-5xl font-semibold text-center max-w-lg">
+            Up to 30% Discount Check it Out
+          </span>
           <span className="flex gap-5 font-semibold">
-            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center ">{timeLeft.days} <span>Días</span></div>
-            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center">{timeLeft.hours} <span>Horas</span></div>
-            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center" >{timeLeft.minutes} <span>Min</span></div>
-            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center">{timeLeft.seconds} <span>Seg</span></div>
+            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center ">
+              {timeLeft.days} <span>Días</span>
+            </div>
+            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center">
+              {timeLeft.hours} <span>Horas</span>
+            </div>
+            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center">
+              {timeLeft.minutes} <span>Min</span>
+            </div>
+            <div className="w-16 h-14 bg-white rounded-md flex flex-col justify-center items-center">
+              {timeLeft.seconds} <span>Seg</span>
+            </div>
           </span>
 
           <NavLink className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-semibold  hover:bg-emerald-500 transition">
@@ -116,6 +131,27 @@ const Home = () => {
         <div>
           <img src={laptop} alt="laptop" />
         </div>
+      </section>
+
+      <section className={`${styles.sectionFourt} px-8% py-7 flex justify-center items-center gap-6`}>
+        <div className="flex flex-col justify-center items-center gap-2 text-center">
+          <img className="w-10" src={dollar} alt="" />
+          <h3 className="font-semibold text-emerald-400">Free Delivery</h3>
+          <p>free shipping to all of Colombia maximum 3 products</p>
+        </div>
+
+        <div className="flex flex-col justify-center items-center gap-2 text-center">
+          <img className="w-12" src={box} alt="" />
+          <h3 className="font-semibold text-emerald-400">Paid monthly at 1% APR</h3>
+          <p>free shipping to all of Colombia maximum 3 products</p>
+        </div>
+
+        <div className="flex flex-col justify-center items-center gap-2 text-center"  >
+          <img className="w-10" src={plus} alt="" />
+          <h3 className="font-semibold text-emerald-400">Personalize it</h3>
+          <p>free shipping to all of Colombia maximum 3 products</p>
+        </div>
+
       </section>
     </main>
   );
