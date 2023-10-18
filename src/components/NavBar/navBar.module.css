@@ -1,4 +1,8 @@
 .header {
+  z-index: 99;
+  background-color: rgba(246, 253, 255, 0.945);
+  position: absolute;
+  position: fixed;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   padding: 20px 8%;
