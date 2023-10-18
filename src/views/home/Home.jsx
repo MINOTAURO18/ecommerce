@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <main className={`${styles.home} text-zinc-900`}>
       <section
-        className={`${styles.sectionOne} flex items-center w-full px-8% min-h-screen`}
+        className={`${styles.sectionOne} flex gap-0 items-center w-full px-8% min-h-screen `}
       >
         <article className="w-3/5 flex flex-col gap-6">
           <span className="text-emerald-400 font-semibold">
@@ -69,7 +69,7 @@ const Home = () => {
           </NavLink>
         </article>
         <div className="flex h-8 w-2/5 justify-center items-center animate-bounce animate-infinite animate-duration-[3000ms]  z-30">
-          <img className="w-96 z-10" src={phones} alt="#" />
+          <img className={`${styles.phones} w-96 z-10`} src={phones} alt="#" />
         </div>
         <span className={`${styles.deco}`}></span>
       </section>
@@ -134,7 +134,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={`${styles.sectionFourt} px-8% py-7 flex justify-center items-center gap-6`}>
+      <section className={`${styles.sectionFourt} px-8% py-7 flex justify-center items-center gap-10 flex-wrap`}>
         <div className="flex flex-col justify-center items-center gap-2 text-center">
           <img className="w-10" src={dollar} alt="" />
           <h3 className="font-semibold text-emerald-400">Free Delivery</h3>

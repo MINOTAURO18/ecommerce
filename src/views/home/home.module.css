@@ -19,6 +19,10 @@
   min-height: 60vh;
 }
 
+.sectionFourt p{
+  max-width: 350px;
+}
+
 .deco{
     position: absolute;
     top: 62%;
@@ -29,4 +33,21 @@
     background: linear-gradient(45deg, rgb(0, 199, 133), rgb(0, 78, 129));
     filter: blur(80px);
    
+}
+
+
+@media (width < 800px){
+  h1{
+    font-size: 2rem !important;
+  }
+}
+
+@media (width < 1020px){
+
+  .sectionOne article{
+    width: 100%;
+  }
+   .sectionOne .phones, .deco{
+     display: none;
+   }
 }
