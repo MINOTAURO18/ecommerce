@@ -68,7 +68,7 @@ const Home = () => {
             boton
           </NavLink>
         </article>
-        <div className="flex h-8 w-2/5 justify-center items-center animate-bounce animate-infinite animate-duration-[3000ms]  z-30">
+        <div className="flex h-8 w-2/5 justify-center items-center animate-bounce animate-infinite animate-duration-[2500ms]  z-30">
           <img className={`${styles.phones} w-96 z-10`} src={phones} alt="#" />
         </div>
         <span className={`${styles.deco}`}></span>
