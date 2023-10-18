@@ -2,6 +2,16 @@
   background-color: rgb(246, 253, 255);
 }
 
+.sectionTwo{
+  min-height: 40vh;
+  background: linear-gradient(45deg, rgb(255, 255, 255),rgba(0, 199, 133, 0.192)  );
+}
+
+.sectionThree{
+  background-color: rgb(246, 253, 255);
+  min-height: 80vh;
+}
+
 .deco{
     position: absolute;
     top: 62%;
