@@ -4,24 +4,26 @@ import Products from "./views/products/Products";
 import About from "./views/about/About";
 import Footer from "./components/footer/Footer";
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./index.css";
+import Details from "./views/details/Details";
 
 function App() {
+  const location = useLocation()
   const [allProducts, setAllProducts] = useState([]);
   const [total, setTotal] = useState(0);
   const [countProducts, setCountProducts] = useState(0);
   return (
     <div>
-      <NavBar
+        <NavBar
         allProducts={allProducts}
         setAllProducts={setAllProducts}
         total={total}
         setTotal={setTotal}
         countProducts={countProducts}
         setCountProducts={setCountProducts}
-      />
+        /> 
       <Routes>
         <Route
           path="/"
@@ -62,9 +64,25 @@ function App() {
             </TransitionGroup>
           }
         />
+
+        {/* <Route
+          path="/detail/:id"
+          element={
+            <TransitionGroup>
+              <CSSTransition key="detail" classNames="fade" timeout={200}>
+                <Details />
+              </CSSTransition>
+              </TransitionGroup>
+            }
+          /> */}
+
+        <Route path="/detail/:id" element={<Details/>} />
       </Routes>
 
-      <Footer />
+      {
+       location.pathname == '/' || location.pathname === '/products' || location.pathname === '/about' ? <Footer /> : null
+      }
+     
     </div>
   );
 }

@@ -28,23 +28,24 @@ const Slider = () => {
   };
 
   return (
-    <div className='w-full max-h-500px'>
+    <div className='w-full max-h-500px rounded-lg'>
       <Carousel
         showArrows={false}
         showStatus={false}
         showThumbs={false}
         selectedItem={currentSlide}
         onChange={handleChange}
+        className='rounded-lg'
       >
         {/* Aquí debes incluir tus imágenes como elementos de diapositiva */}
-        <div>
-          <img className='max-h-500px' src={banner1} alt="Imagen 1" />
+        <div className='rounded-lg'>
+          <img className='max-h-500px rounded-lg' src={banner1} alt="Imagen 1" />
         </div>
         <div>
-          <img className='max-h-500px' src={banner2} alt="Imagen 2" />
+          <img className='max-h-500px rounded-lg' src={banner2} alt="Imagen 2" />
         </div>
         <div>
-          <img className='max-h-500px' src={banner3} alt="Imagen 3" />
+          <img className='max-h-500px rounded-lg' src={banner3} alt="Imagen 3" />
         </div>
       </Carousel>
     </div>

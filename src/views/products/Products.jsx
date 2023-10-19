@@ -1,6 +1,7 @@
 import styles from './products.module.css'
-import {data} from '../../data/products.json'
+import data from '../../data/products.json'
 import Slider from '../../components/carrucell'
+import { NavLink } from 'react-router-dom';
 const Products= ({
     allProducts,
 	setAllProducts,
@@ -26,6 +27,8 @@ const Products= ({
 		setCountProducts(countProducts + product.stock);
 		setAllProducts([...allProducts, product]);
 	};
+
+    
     return(
         <section className={`${styles.products} py-28 px-8% flex flex-wrap justify-center gap-12`}>
             <Slider/>
@@ -37,6 +40,7 @@ const Products= ({
                             <h3 className='text-center font-semibold'>{product.title}</h3>
                             <span className='text-center font-semibold text-xs'>{product.price}$</span>
                             <button className='w-60 rounded-md h-10 bg-black text-white m-auto font-semibold' onClick={() => onAddProduct(product)}>add to cart</button>
+                            <NavLink to={`/detail/${product.id}`} className='w-60 rounded-md h-10 bg-black text-white m-auto font-semibold' >add to cart</NavLink>
                         </div>
                     )
                 })

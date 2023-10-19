@@ -29,15 +29,6 @@ const About = () => {
         <img src={img4} className="rounded-md" alt="" />
       </article>
 
-      <article>
-        <h3></h3>
-        <p></p>
-      </article>
-
-      <article>
-        <h3></h3>
-        <p></p>
-      </article>
     </section>
   );
 };
