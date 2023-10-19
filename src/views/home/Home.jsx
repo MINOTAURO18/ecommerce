@@ -10,7 +10,6 @@ import box from "../../assets/box.svg";
 import dollar from "../../assets/dollar.svg";
 import plus from "../../assets/plus.svg";
 import smartwach from "../../assets/Smartwach.webp";
-import Footer from '../../components/footer/Footer'
 import { useState, useEffect } from "react";
 
 const Home = () => {
@@ -155,7 +154,6 @@ const Home = () => {
 
       </section>
 
-      <Footer/>
     </main>
   );
 };

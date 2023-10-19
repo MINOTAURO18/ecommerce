@@ -3,21 +3,34 @@ import Home from "./views/home/Home";
 import Products from "./views/products/Products";
 import About from "./views/about/About";
 import Footer from "./components/footer/Footer";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./index.css";
 
 function App() {
+  const [allProducts, setAllProducts] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [countProducts, setCountProducts] = useState(0);
   return (
     <div>
-      <NavBar />
+      <NavBar
+        allProducts={allProducts}
+        setAllProducts={setAllProducts}
+        total={total}
+        setTotal={setTotal}
+        countProducts={countProducts}
+        setCountProducts={setCountProducts}
+      />
       <Routes>
-      <Route
+        <Route
           path="/"
           element={
             <TransitionGroup>
               <CSSTransition key="home" classNames="fade" timeout={200}>
-                <Home/>
+                <Home
+                
+                />
               </CSSTransition>
             </TransitionGroup>
           }
@@ -27,8 +40,15 @@ function App() {
           element={
             <TransitionGroup>
               <CSSTransition key="products" classNames="fade" timeout={200}>
-                <Products/>
-              </CSSTransition>  
+                <Products
+                allProducts={allProducts}
+                setAllProducts={setAllProducts}
+                total={total}
+                setTotal={setTotal}
+                countProducts={countProducts}
+                setCountProducts={setCountProducts}
+                />
+              </CSSTransition>
             </TransitionGroup>
           }
         />
@@ -37,15 +57,14 @@ function App() {
           element={
             <TransitionGroup>
               <CSSTransition key="about" classNames="fade" timeout={200}>
-                <About/>
+                <About />
               </CSSTransition>
             </TransitionGroup>
           }
         />
-        
       </Routes>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
