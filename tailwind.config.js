@@ -8,6 +8,9 @@ export default {
     extend: {
       padding: {
         '8%': '8%',
+      },
+      maxHeight: {
+        '500px': '500px',
       }
     },
   },

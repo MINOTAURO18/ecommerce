@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Home from "./views/home/Home";
 import Products from "./views/products/Products";
 import About from "./views/about/About";
+import Footer from "./components/footer/Footer";
 import { Routes, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./index.css";
@@ -43,6 +44,8 @@ function App() {
         />
         
       </Routes>
+
+      <Footer/>
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import styles from './products.module.css'
 import {products} from '../../data/products.json'
+import Slider from '../../components/carrucell'
 const Products = () => {
     return(
         <section className={`${styles.products} py-28 px-8% flex flex-wrap justify-center gap-9`}>
+            <Slider/>
             {
                 products.map(pro => {
                     return(
