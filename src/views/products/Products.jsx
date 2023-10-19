@@ -33,10 +33,10 @@ const Products= ({
                 data.map(product => {
                     return(
                         <div key={product.id} className={`${styles.card} flex flex-col  w-80 h-80 gap-1`}>
-                            <img className='w-full h-52' src={product.images[0]} alt="" />
+                            <img className={`${styles.scale} w-full h-52`} src={product.images[0]} alt="" />
                             <h3 className='text-center font-semibold'>{product.title}</h3>
-                            <span>{product.price}$</span>
-                            <button className='w-60 rounded-md h-10 bg-black text-white m-auto' onClick={() => onAddProduct(product)}>add to cart</button>
+                            <span className='text-center font-semibold text-xs'>{product.price}$</span>
+                            <button className='w-60 rounded-md h-10 bg-black text-white m-auto font-semibold' onClick={() => onAddProduct(product)}>add to cart</button>
                         </div>
                     )
                 })

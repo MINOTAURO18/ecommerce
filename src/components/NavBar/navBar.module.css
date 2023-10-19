@@ -7,3 +7,13 @@
   grid-template-columns: 25% 50% 25%;
   padding: 20px 8%;
 }
+
+@media(width < 750px) {
+
+  header{
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo{
+    display: none !important;
+  }
+}

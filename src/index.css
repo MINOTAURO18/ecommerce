@@ -206,3 +206,10 @@ body::-webkit-scrollbar-thumb:hover {
 		width: 320px;
 	}
 }
+
+@media (width < 750px) {
+	header{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}

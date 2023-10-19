@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import styles from './navBar.module.css'
 const NavBar = ({
   allProducts,
   setAllProducts,
@@ -26,7 +27,7 @@ const NavBar = ({
 
   return (
     <header>
-      <span className="flex justify-start items-center font-semibold text-2xl text-emerald-400">
+      <span className={`${styles.logo} flex justify-start items-center font-semibold text-2xl text-emerald-400`}>
         JamyCommerce
       </span>
 

@@ -18,7 +18,7 @@ const Slider = () => {
       } else {
         setCurrentSlide(0);
       }
-    }, 3000); // Cambia 3000 a la duración deseada entre cambios de diapositiva en milisegundos
+    }, 2000); // Cambia 3000 a la duración deseada entre cambios de diapositiva en milisegundos
 
     return () => clearInterval(interval);
   }, [currentSlide]);
