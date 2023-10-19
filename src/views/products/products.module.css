@@ -2,7 +2,16 @@
     border-radius: 10px 10px 0 0 ;
 }
 
+.card{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
 .products{
   background: linear-gradient(45deg, rgb(255, 255, 255),rgba(0, 199, 133, 0.096)  );
 
+}
+
+p{
+  max-width: 750px;
 }
