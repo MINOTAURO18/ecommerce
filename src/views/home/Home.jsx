@@ -47,9 +47,9 @@ const Home = () => {
   return (
     <main className={`${styles.home} text-zinc-900`}>
       <section
-        className={`${styles.sectionOne} flex gap-0 items-center w-full px-8% min-h-screen `}
+        className={`${styles.sectionOne} flex items-center w-full px-8% min-h-screen `}
       >
-        <article className="w-3/5 flex flex-col gap-6">
+        <article className={` ${styles.article}  flex flex-col gap-6`}>
           <span className="text-emerald-400 font-semibold">
             technology out of this world !
           </span>
@@ -67,14 +67,14 @@ const Home = () => {
             Buy
           </NavLink>
         </article>
-        <div className="flex h-8 w-2/5 justify-center items-center animate-bounce animate-infinite animate-duration-[2500ms]  z-30">
-          <img className={`${styles.phones} w-96 z-10`} src={phones} alt="#" />
+        <div className={`${styles.phones} flex h-8 w-2/5 justify-center items-center animate-bounce animate-infinite animate-duration-[2500ms]  z-30`}>
+          <img className={`w-96 z-10`} src={phones} alt="#" />
         </div>
         <span className={`${styles.deco}`}></span>
       </section>
 
       <section
-        className={`${styles.sectionTwo} flex flex-wrap gap-4 items-center w-full px-8%`}
+        className={`${styles.sectionTwo} flex flex-wrap gap-4 items-center w-full px-8% py-7`}
       >
         <h2 className="text-2xl text-emerald-400 font-semibold">
           Trending Categories

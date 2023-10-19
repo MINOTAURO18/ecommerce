@@ -36,9 +36,17 @@
 }
 
 
+
+
 @media (width < 800px){
   h1{
     font-size: 2rem !important;
+  }
+
+
+
+  .sectionTwo img{
+    width: 90px;
   }
 }
 
