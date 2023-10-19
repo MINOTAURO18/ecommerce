@@ -26,15 +26,17 @@ const NavBar = ({
 
   return (
     <header>
-      <span>JamyCommerce</span>
+      <span className="flex justify-start items-center font-semibold text-2xl text-emerald-400">
+        JamyCommerce
+      </span>
 
-      <div className="flex gap-7">
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/products'>Products</NavLink>
-        <NavLink to='/about'>About</NavLink>
+      <div className="flex gap-7 justify-center items-center font-semibold">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/products">Products</NavLink>
+        <NavLink to="/about">About</NavLink>
       </div>
 
-      <div className="container-icon">
+      <div className="container-icon flex justify-end items-center cursor-pointer">
         <div className="container-cart-icon" onClick={() => setActive(!active)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -68,9 +70,9 @@ const NavBar = ({
                         {product.stock}
                       </span>
                       <span>
-                        <img className="w-24" src={product.images} alt="" />
+                        <img className="w-16" src={product.images} alt="" />
                       </span>
-                      <p className="titulo-producto-carrito">{product.title}</p>
+                      <p className="titulo-producto-carrito text-xs">{product.title.split(" ").slice(0, 2).join(" ")}</p>
                       <span className="precio-producto-carrito">
                         ${product.price}
                       </span>
@@ -100,11 +102,13 @@ const NavBar = ({
               </div>
 
               <button className="btn-clear-all" onClick={onCleanCart}>
-                Vaciar Carrito
+                empty the cart
               </button>
             </>
           ) : (
-            <p className="cart-empty">El carrito está vacío</p>
+            <p className="cart-empty text-center font-semibold">
+              The card is empty
+            </p>
           )}
         </div>
       </div>

@@ -63,8 +63,8 @@ const Home = () => {
             consectetur odio tempore commodi totam earum id, alias magni
             provident? Esse eaque incidunt id qui quaerat voluptates.
           </p>
-          <NavLink className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-bold hover:bg-emerald-500 transition">
-            boton
+          <NavLink to='/products' className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-bold hover:bg-emerald-500 transition">
+            Buy
           </NavLink>
         </article>
         <div className="flex h-8 w-2/5 justify-center items-center animate-bounce animate-infinite animate-duration-[2500ms]  z-30">
@@ -80,22 +80,22 @@ const Home = () => {
           Trending Categories
         </h2>
         <article className="w-full h-auto flex justify-between items-center gap-3 flex-wrap">
-          <div className="w-36 hover:animate-jump animate-once">
+          <div className="w-32 hover:animate-jump animate-once">
             <img src={iphone} alt="" />
           </div>
-          <div className="w-36 hover:animate-jump animate-once">
+          <div className="w-32 hover:animate-jump animate-once">
             <img src={diademas} alt="" />
           </div>
-          <div className="w-36 hover:animate-jump animate-once">
+          <div className="w-32 hover:animate-jump animate-once">
             <img src={laptop} alt="" />
           </div>
-          <div className="w-36 hover:animate-jump animate-once">
+          <div className="w-32 hover:animate-jump animate-once">
             <img src={airpots} alt="" />
           </div>
-          <div className="w-36 hover:animate-jump animate-once">
+          <div className="w-32 hover:animate-jump animate-once">
             <img src={smartwach} alt="" />
           </div>
-          <div className="w-36 hover:animate-jump animate-once">
+          <div className="w-32 hover:animate-jump animate-once">
             <img src={tablet} alt="" />
           </div>
         </article>

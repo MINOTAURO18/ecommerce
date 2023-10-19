@@ -27,16 +27,16 @@ const Products= ({
 		setAllProducts([...allProducts, product]);
 	};
     return(
-        <section className={`${styles.products} py-28 px-8% flex flex-wrap justify-center gap-9`}>
+        <section className={`${styles.products} py-28 px-8% flex flex-wrap justify-center gap-12`}>
             <Slider/>
             {
                 data.map(product => {
                     return(
-                        <div key={product.id} className={`${styles.card} w-80 h-72`}>
+                        <div key={product.id} className={`${styles.card} flex flex-col  w-80 h-80 gap-1`}>
                             <img className='w-full h-52' src={product.images[0]} alt="" />
-                            <h3>{product.title}</h3>
-                            <span>{product.price}</span>
-                            <button onClick={() => onAddProduct(product)}>Buy</button>
+                            <h3 className='text-center font-semibold'>{product.title}</h3>
+                            <span>{product.price}$</span>
+                            <button className='w-60 rounded-md h-10 bg-black text-white m-auto' onClick={() => onAddProduct(product)}>add to cart</button>
                         </div>
                     )
                 })
