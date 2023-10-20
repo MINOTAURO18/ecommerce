@@ -10,29 +10,27 @@ import "./index.css";
 import Details from "./views/details/Details";
 
 function App() {
-  const location = useLocation()
+  const location = useLocation();
   const [allProducts, setAllProducts] = useState([]);
   const [total, setTotal] = useState(0);
   const [countProducts, setCountProducts] = useState(0);
   return (
     <div>
-        <NavBar
+      <NavBar
         allProducts={allProducts}
         setAllProducts={setAllProducts}
         total={total}
         setTotal={setTotal}
         countProducts={countProducts}
         setCountProducts={setCountProducts}
-        /> 
+      />
       <Routes>
         <Route
           path="/"
           element={
             <TransitionGroup>
               <CSSTransition key="home" classNames="fade" timeout={200}>
-                <Home
-                
-                />
+                <Home />
               </CSSTransition>
             </TransitionGroup>
           }
@@ -43,12 +41,12 @@ function App() {
             <TransitionGroup>
               <CSSTransition key="products" classNames="fade" timeout={200}>
                 <Products
-                allProducts={allProducts}
-                setAllProducts={setAllProducts}
-                total={total}
-                setTotal={setTotal}
-                countProducts={countProducts}
-                setCountProducts={setCountProducts}
+                  allProducts={allProducts}
+                  setAllProducts={setAllProducts}
+                  total={total}
+                  setTotal={setTotal}
+                  countProducts={countProducts}
+                  setCountProducts={setCountProducts}
                 />
               </CSSTransition>
             </TransitionGroup>
@@ -65,24 +63,14 @@ function App() {
           }
         />
 
-        {/* <Route
-          path="/detail/:id"
-          element={
-            <TransitionGroup>
-              <CSSTransition key="detail" classNames="fade" timeout={200}>
-                <Details />
-              </CSSTransition>
-              </TransitionGroup>
-            }
-          /> */}
-
-        <Route path="/detail/:id" element={<Details/>} />
+        <Route path="/detail/:id" element={<Details />} />
       </Routes>
 
-      {
-       location.pathname == '/' || location.pathname === '/products' || location.pathname === '/about' ? <Footer /> : null
-      }
-     
+      {location.pathname == "/" ||
+      location.pathname === "/products" ||
+      location.pathname === "/about" ? (
+        <Footer />
+      ) : null}
     </div>
   );
 }
