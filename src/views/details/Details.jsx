@@ -32,10 +32,10 @@ const Details = ({
       className={`${styles.details} w-full min-h-screen px-8% py-20 flex gap-8 flex-wrap justify-center items-center`}
     >
       <img src={productFind.images[0]} alt="" />
-      <div>
-        <h3><span className="text-emerald-400 font-semibold text-2xl">Name:</span> {productFind.title}</h3>
-        <p className="max-w-xs"><span className="text-emerald-400 font-semibold text-2xl">Description:</span> {productFind.description}</p>
-        <h4><span className="text-emerald-400 font-semibold text-2xl">Price:</span> {productFind.price}</h4>
+      <div className="flex flex-col gap-3">
+        <h3 className="font-semibold"><span className="text-emerald-400 font-semibold text-2xl">Name:</span> {productFind.title}</h3>
+        <p className="max-w-xs font-semibold"><span className="text-emerald-400 font-semibold text-2xl">Description:</span> {productFind.description}</p>
+        <h4 className="font-semibold"><span className="text-emerald-400 font-semibold text-2xl">Price:</span> {productFind.price}$</h4>
         <button className='w-60 rounded-md h-10 bg-emerald-400 text-white m-auto font-semibold hover:bg-emerald-600 transition' onClick={() => onAddProduct(productFind)}>add to cart</button>
       </div>
     </section>
