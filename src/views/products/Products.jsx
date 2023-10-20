@@ -35,12 +35,12 @@ const Products= ({
             {
                 data.map(product => {
                     return(
-                        <div key={product.id} className={`${styles.card} flex flex-col  w-80 h-auto py-2 gap-1`}>
+                        <div key={product.id} className={`${styles.card} flex flex-col  w-80 h-auto py-2 gap-2`}>
                             <img className={`${styles.scale} w-full h-52`} src={product.images[0]} alt="" />
                             <h3 className='text-center font-semibold'>{product.title}</h3>
-                            <span className='text-center font-semibold text-xs'>{product.price}$</span>
-                            <button className='w-60 rounded-md h-10 bg-emerald-400 text-white m-auto font-semibold' onClick={() => onAddProduct(product)}>add to cart</button>
-                            <NavLink to={`/detail/${product.id}`} className='w-60 rounded-md h-10 bg-black text-white m-auto font-semibold flex justify-center items-center' >Details</NavLink>
+                            
+                            <button className='w-60 rounded-md h-10 bg-emerald-400 text-white m-auto font-semibold hover:bg-emerald-600 transition' onClick={() => onAddProduct(product)}>add to cart</button>
+                            <NavLink to={`/detail/${product.id}`} className='w-60 rounded-md h-10 bg-black text-white m-auto font-semibold flex justify-center items-center hover:bg-gray-950 transition' >Details</NavLink>
                         </div>
                     )
                 })

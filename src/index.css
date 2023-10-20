@@ -203,7 +203,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (width < 500px) {
 	.container-cart-products{
-		width: 320px;
+		width: 300px;
 	}
 }
 

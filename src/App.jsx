@@ -63,7 +63,19 @@ function App() {
           }
         />
 
-        <Route path="/detail/:id" element={<Details />} />
+        <Route
+          path="/detail/:id"
+          element={
+            <Details
+              allProducts={allProducts}
+              setAllProducts={setAllProducts}
+              total={total}
+              setTotal={setTotal}
+              countProducts={countProducts}
+              setCountProducts={setCountProducts}
+            />
+          }
+        />
       </Routes>
 
       {location.pathname == "/" ||
