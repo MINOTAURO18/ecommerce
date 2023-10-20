@@ -124,7 +124,7 @@ const Home = () => {
             </div>
           </span>
 
-          <NavLink className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-semibold  hover:bg-emerald-500 transition">
+          <NavLink to='/detail/5' className="w-28 h-10 border bg-emerald-400 rounded-md flex justify-center items-center font-semibold  hover:bg-emerald-500 transition">
             Shop Now
           </NavLink>
         </article>
